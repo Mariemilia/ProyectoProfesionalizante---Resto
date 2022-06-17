@@ -8,19 +8,19 @@ namespace PyotectoProfesionalizante___Resto
    public class Restaurante
     {
         [Key]
-        public int IdResto { get; set; }
+        public String IdResto { get; set; }
         public String Direccion { get; set; }
         public List<Mesa> Mesas { get; set; }
         public List<Reserva> RegistroReservas { get; set; }
         public List<Comensal> Clientes { get; set; }
 
-        public Restaurante(int Id, String Direc)
+        public Restaurante(string Id, string Direc, List<Mesa> M, List<Reserva> Registro, List<Comensal> Cli)
         {
             IdResto = Id;
             Direccion = Direc;
-            Mesas = new List<Mesa>();
-            RegistroReservas = new List<Reserva>();
-            Clientes = new List<Comensal>();
+            Mesas = M;
+            RegistroReservas = Registro;
+            Clientes = Cli;
         }
     }
 }

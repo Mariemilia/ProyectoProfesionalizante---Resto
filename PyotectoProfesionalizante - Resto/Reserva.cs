@@ -26,7 +26,6 @@ namespace PyotectoProfesionalizante___Resto
             TitularReserva = Titular;
             EstadoR = Estado;
             FechaReserva = DiaHora;
-        }
-        
+        }  
     }
 }

@@ -25,6 +25,5 @@ namespace PyotectoProfesionalizante___Resto
             Email = EmailC;
             Reserva = R;
         }
-        
     }
 }
