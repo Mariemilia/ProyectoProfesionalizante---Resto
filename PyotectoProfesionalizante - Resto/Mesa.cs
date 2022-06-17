@@ -15,12 +15,5 @@ namespace PyotectoProfesionalizante___Resto
         [Display(Name = "Estado de la mesa: ")]
         [EnumDataType(typeof(EstadoMesa))]
         public EstadoMesa EstadoM { get; set; }
-
-        public Mesa(int IdM, int CantPersonas, EstadoMesa Estado)
-        {
-            IdMesa = IdM;
-            Capacidad = CantPersonas;
-            EstadoM = Estado;
-        }
     }
 }

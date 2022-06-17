@@ -13,14 +13,5 @@ namespace PyotectoProfesionalizante___Resto
         public List<Mesa> Mesas { get; set; }
         public List<Reserva> RegistroReservas { get; set; }
         public List<Comensal> Clientes { get; set; }
-
-        public Restaurante(string Id, string Direc, List<Mesa> M, List<Reserva> Registro, List<Comensal> Cli)
-        {
-            IdResto = Id;
-            Direccion = Direc;
-            Mesas = M;
-            RegistroReservas = Registro;
-            Clientes = Cli;
-        }
     }
 }
