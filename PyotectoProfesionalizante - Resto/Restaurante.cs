@@ -13,5 +13,14 @@ namespace PyotectoProfesionalizante___Resto
         public List<Mesa> Mesas { get; set; }
         public List<Reserva> RegistroReservas { get; set; }
         public List<Comensal> Clientes { get; set; }
+
+        public Restaurante(int Id, String Direc)
+        {
+            IdResto = Id;
+            Direccion = Direc;
+            Mesas = new List<Mesa>();
+            RegistroReservas = new List<Reserva>();
+            Clientes = new List<Comensal>();
+        }
     }
 }

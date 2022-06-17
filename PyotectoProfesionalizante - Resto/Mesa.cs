@@ -7,9 +7,20 @@ namespace PyotectoProfesionalizante___Resto
 {
    public class Mesa
     {
+        [Display(Name = "N° de mesa: ")]
         [Key]
         public int IdMesa { get; set; }
+        [Display(Name = "Cantidad de personas por mesa: ")]
         public int Capacidad { get; set; }
+        [Display(Name = "Estado de la mesa: ")]
+        [EnumDataType(typeof(EstadoMesa))]
         public EstadoMesa EstadoM { get; set; }
+
+        public Mesa(int IdM, int CantPersonas, EstadoMesa Estado)
+        {
+            IdMesa = IdM;
+            Capacidad = CantPersonas;
+            EstadoM = Estado;
+        }
     }
 }
